@@ -391,7 +391,7 @@ span {
 }
 
 .skill-bar .bar .Figma {
-    width: 90%;
+    width: 60%;
     animation: Figma 2s ease-in-out;
 }
 
