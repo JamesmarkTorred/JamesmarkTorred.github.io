@@ -14,7 +14,7 @@
 <body>
     <!--header design-->
     <header class="header">
-        <a href="homepage.html" class="logo">THE <br>DOER'S.</a>
+        <a href="#" class="logo">My <br>Portfolio</a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 
-            <a href="https://drive.google.com/file/d/1vf2v6MON-iq93gFnQWEnIHIwZWZPsK7Q/view?usp=drive_link" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a> <!-- Link to download CV -->
+            <a download="" href="pdf/JamesMark Torred CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a> <!-- Link to download CV -->
 
         </div>
 
@@ -284,23 +284,25 @@
 
       <section class="contacts" id="contacts">
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
+    
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="570549a1-73f8-4787-a414-074ccd59c7db">
+            
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="full_name" placeholder="Full Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
             </div>
-
+    
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="mobile_number" placeholder="Mobile Number" class="contact-inputs" required>
+                <input type="text" name="subject" placeholder="Email Subject" class="contact-inputs" required>
             </div>
-
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" class="contact-inputs" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-
-      </section>
+    </section>
+    
 
       <!--footer section-->
       <section class="footer">
